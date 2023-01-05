@@ -17,7 +17,10 @@ public class Main {
                 System.exit(1);
             } else if (strInput.equals("java:read")) {
                 listFun.listRead("list.txt");
-            } else {
+            } else if(strInput.equals("java:wipe")) {
+                listFun.fileWipe("list.txt");
+            }
+            else {
                 // calls the function on line 7 NOTE soon to be moved to a class
                 listFun.listWrite(list,strInput);
                 //closes file

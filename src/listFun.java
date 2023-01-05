@@ -16,7 +16,9 @@ public class listFun {
                 System.out.println(listItem);
             }
 
-
+        }
+        static void fileWipe(String docWip)throws IOException{
+            new FileWriter(docWip, false).close();
         }
     }
 
